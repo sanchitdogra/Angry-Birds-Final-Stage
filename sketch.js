@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box1, pig1,pig3;
-var backgroundImg = "bg1.png"
+var backgroundImg;
 var platform;
 var bird, slingshot;
 
