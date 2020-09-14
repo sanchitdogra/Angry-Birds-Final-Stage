@@ -5,7 +5,8 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box1, pig1,pig3;
-var backgroundImg,platform;
+var backgroundImg = "bg1.png"
+var platform;
 var bird, slingshot;
 
 var gameState = "onSling";
@@ -99,8 +100,7 @@ function keyPressed(){
         Matter.Body.setPosition(bird.body,{x:200,y:50});
         bird.body.speed = 0;
         bird.trajectory = [];
-    }
-    console.log(bird.body.position.x + ":" + bird.body.position.y + ":" + bird.body.speed)
+    }   
     if(keyCode === 32 && bird.body.speed <1){
         bird.trajectory = [];
         slingshot.attach(bird.body);
