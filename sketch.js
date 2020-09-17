@@ -15,7 +15,8 @@ var bg = "bg1.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+    //getBackgroundImg();
+    backgroundImg = loadImage(bg);
 }
 
 function setup(){
